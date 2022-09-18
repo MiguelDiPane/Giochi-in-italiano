@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/paper.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/cosaSignifica.css">
+    <link rel="shortcut icon" href="img/italy_icon.ico" type="image/x-icon">
+    <title>Cosa significa?</title>
+</head>
+<body>
+    
+    <div class="container-xs paper border" id="menuPrincipal">
+        <div class="row flex-center">
+            <div class="col  text-center">
+                <div class="cont-btn-salir">
+                    <a href="index.html" class="paper-btn btn-salir btn-danger-outline">X</a>
+                </div>
+                <h1>Cosa significa?</h1>
+                <h4>Un gioco per migliorare il tuo vocabolario</h4>
+                <button class="btn-large btn-success-outline margin-top-small" id="btn-start">Inizia</button>                
+            </div>
+        </div>
+    </div>
+
+    <div class="container-xs paper border" id="menuNivel">
+        <div class="row flex-center">
+            <div class="col  text-center">
+                <div class="cont-btn-salir">
+                    <a href="index.html" class="paper-btn btn-salir btn-danger-outline">X</a>
+                </div>
+                <h2>Scegli il tuo livello</h2>
+                <p class="margin-bottom-small">Le parole dei livelli inferiori possono apparire nei livelli più alti</p>
+                <button class="btn-large btn-success-outline btn-start-nivel" value="1">A1</button>
+                <button class="btn-large btn-secondary-outline btn-start-nivel" value="2">A2</button>  
+                <button class="btn-large btn-warning-outline btn-start-nivel" value="3">B1</button>  
+                <button class="btn-large btn-danger-outline btn-start-nivel" value="4">B2</button>                  
+            </div>
+        </div>
+    </div>
+
+    <div class="container-xs paper border" id="juego">
+        <div class="row flex-center">
+            <div class="col  text-center">
+                <div class="cont-btn-salir">
+                    <a href="index.html" class="paper-btn btn-salir btn-danger-outline">X</a>
+                </div>
+                <h1 id="palabra">Albero</h1>
+                <h5 id="avance">Parola 1/10</h5>
+                <div class="opciones">
+                    <button class="btn-large btn-primary btn-op" id="btn-op0" value="0"></button>   
+                    <button class="btn-large btn-primary btn-op" id="btn-op1" value="1"></button>   
+                    <button class="btn-large btn-primary btn-op" id="btn-op2" value="2"></button> 
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-xs paper border" id="finJuego">
+        <div class="row flex-center">
+            <div class="col  text-center">
+                <div class="cont-btn-salir">
+                    <a href="index.html" class="paper-btn btn-salir btn-danger-outline">X</a>
+                </div>
+                <h1>Hai finito!</h1>
+                <div class="puntaje">
+                    <h4 id="avance">Il tuo punteggio finale è:</h4>
+                    <h4 class="text-success" id="correctas"></h4>
+                    <h4 class="text-danger" id="erroneas"></h4>
+                    <h4 id="msjFinal"></h4>
+                </div>
+                <button class="btn-large btn-success-outline margin-top-small" id="btn-restart">Riprova</button>                
+            </div>
+        </div>
+    </div>
+
+    <!--Scripts-->
+    <script src="js/jquery-3.5.1.js"></script>
+    <script src="js/dictionaries.js"></script>
+    <script src="js/sonidosBotones.js"></script>
+    <script src="js/cosaSignifica.js"></script>
+</body>
+</html>

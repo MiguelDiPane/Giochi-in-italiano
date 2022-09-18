@@ -1,0 +1,15 @@
+/* Estilos particulares para juego Cosa Significa*/
+.opciones{
+    display: flex;
+    flex-direction: column;
+}
+
+.opciones button{
+    margin: 20px;
+    font-size:large;
+}
+
+.puntaje p{
+    display: flex;
+    font-size: 1vw;
+}

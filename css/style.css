@@ -1,0 +1,67 @@
+/*Estilos generales para toda la aplicacion*/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: rgb(61, 63, 72);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.paper-btn{
+    text-align: center;
+}
+a img{
+    width: 150px;
+    margin-bottom: 10px;
+}
+
+h1,h2,h3,p{
+    margin: 0;
+    padding: 0;
+}
+
+@media (max-width: 900px) {
+    h1{
+        font-size: 3em;
+    }
+}
+
+.opciones{
+    display: flex;
+    flex-direction: column;
+}
+
+.opciones button{
+    margin: 20px;
+    font-size:large;
+}
+
+.puntaje p{
+    display: flex;
+    font-size: 1vw;
+}
+#img-container{
+    display: flex;
+    justify-content: center;
+}
+img{
+    border: none;
+}
+#img-container img{
+    width: 30%;
+}
+
+.cont-btn-salir{
+    text-align: right;
+}
+.btn-salir{
+    padding: 0 5px;
+
+}

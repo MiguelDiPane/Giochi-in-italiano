@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/paper.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/impiccato.css">
+    <link rel="shortcut icon" href="img/italy_icon.ico" type="image/x-icon">
+    <title>L'impiccato</title>
+</head>
+<body>
+
+    <div class="container-xs paper border" id="menuPrincipal">
+        <div class="row flex-center">
+            <div class="col  text-center" id="title-container">
+                <div class="cont-btn-salir">
+                    <a href="index.html" class="paper-btn btn-salir btn-danger-outline">X</a>
+                </div>
+                <h1>L'impiccato</h1>
+                <h4>Indovina la parola prima che l'omino sia completamente disegnato</h4>
+                <button class="btn-large btn-success-outline margin-top-small" id="btn-start">Inizia</button>              
+            </div>
+        </div>
+    </div>
+
+    <div class="container-xs paper border" id="juego">
+        <div class="row flex-center">
+            <div class="col  text-center" id="title-container">
+                <div class="cont-btn-salir">
+                    <a href="index.html" class="paper-btn btn-salir btn-danger-outline">X</a>
+                </div>
+                <!--Dibujar las espacios para la palabra-->
+                <div id="palabra">
+                    <!--Traidos de js-->
+                </div> 
+                <form id="ingresoLetra">
+                    <label for="inputLetra">Inserisci una lettera</label>
+                    <input type="text" id="inputLetra" maxlength="1">
+                    <button type="submit" class="btn-secondary-outline margin-top" id="btnCargarLetra">Prova</button>
+                  </form>
+                <div id="letrasUsadas">
+                    <!--Traidos de js-->  
+                    
+                </div> 
+                <canvas id="canvas">
+                    <!--Dibujo monigote-->
+                </canvas>         
+            </div>
+        </div>
+    </div>
+
+    <div class="container-xs paper border" id="finalJuego">
+        <div class="row flex-center">
+            <div class="col  text-center">
+                <div class="cont-btn-salir">
+                    <a href="index.html" class="paper-btn btn-salir btn-danger-outline">X</a>
+                </div>
+                <h4 id="mensajeFinal"></h4> 
+                <p>La tua parola è:</p>              
+                <h1 id="palabraFinal"></h1>
+                <p id="definicion"></p>
+                <button class="btn-medium btn-success-outline margin-top-small" id="btn-restart">Riprova</button>  
+            </div>
+        </div>
+    </div>
+
+
+    <!--Scripts-->
+    <script src="js/jquery-3.5.1.js"></script>
+    <script src="js/sonidosBotones.js"></script>
+    <script src="js/dictionaries.js"></script>
+    <script src="js/impiccato.js"></script>
+</body>
+</html>
